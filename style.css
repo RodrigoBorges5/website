@@ -506,7 +506,6 @@ body {
     }
 }
 @media (max-width: 550px) { 
-    @media (max-width: 375px) {
         .home-page {
             display: none; /* Remove completamente a seção */
         }
@@ -533,6 +532,5 @@ body {
         .about-text p {
             font-size: 0.9rem; /* Tamanho do texto */
         }
-    }
     
 }
