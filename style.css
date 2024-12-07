@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 50px;
     background-color: #b08bfa;
     
 }
@@ -366,6 +366,11 @@ body {
     color: #333333;
     font-size: 1rem;
     line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .legal-notice h1 {
@@ -397,4 +402,105 @@ body {
 .voluntariado-page p {
     font-size: 1rem; /* Tamanho menor para o texto */
     color: #555555; /* Cor cinza para o texto */
+}
+@media (max-width: 898px) {
+    
+    .home-page .content {
+        display: flex;
+        flex-direction: row; /* Organiza os elementos verticalmente */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 0; /* Remove espaçamentos laterais */
+        height: 100%; /* Garante que ocupa toda a altura da seção */
+    }
+
+    .home-page .content h1 {
+        font-size: 3rem; /* Ajusta o tamanho do título */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-page .content p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .home-page .content .cta {
+        display: inline-block; /* Garante comportamento de bloco no botão */
+        margin-left: 100px;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px; /* Ajusta o espaçamento interno da seção */
+        padding-bottom: 35px;
+        gap:20px;
+    }
+    .about-text h2{
+        line-height: 1;
+        text-align: center;
+    }
+    .about-text .about-divider {
+        margin-left: 200px;
+        width: 100px;
+    }
+    .about-text p {
+        text-align: center;
+    
+    }
+    .opportunity-card {
+        width: 300px;
+        text-align: center;
+    }
+    .opportunity-card h3{
+        align-items: center;
+    }
+    .legal-notice {
+        margin-top: 80px;
+        padding: 10px;
+        color: #333333;
+        font-size: 1rem;
+        line-height: 1.8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .legal-notice h1 {
+        font-family: 'Neilvard Three', sans-serif;
+        font-size: 2.5rem;
+        color: #b08bfa;
+        margin-bottom: 20px;
+    }
+   
+}
+@media (max-width: 600px) {    
+    .nav-bar {
+        justify-content: center; /* Centraliza o conteúdo */
+        padding: 0;
+    }
+
+    .logo {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: auto;
+        max-height: 50px; /* Mantém um limite de altura */
+    }
+
+    .nav-bar-options {
+        display: none; /* Oculta as opções do menu */
+    }
+    .home-page .content .cta {
+        display: inline-block; /* Garante comportamento de bloco no botão */
+        margin-left: 50px;
+    }
 }
