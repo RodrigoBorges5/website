@@ -505,7 +505,7 @@ body {
         margin-left: 50px;
     }
 }
-@media (max-width: 400px) { 
+@media (max-width: 550px) { 
     @media (max-width: 375px) {
         .home-page {
             display: none; /* Remove completamente a seção */
