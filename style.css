@@ -481,6 +481,9 @@ body {
    
 }
 @media (max-width: 600px) {    
+    .home-page {
+        display: none; /* Esconde a seção da home-page */
+    }
     .nav-bar {
         justify-content: center; /* Centraliza o conteúdo */
         padding: 0;
@@ -504,33 +507,4 @@ body {
         display: inline-block; /* Garante comportamento de bloco no botão */
         margin-left: 50px;
     }
-}
-@media (max-width: 550px) { 
-        .home-page {
-            display: none; /* Remove completamente a seção */
-        }
-
-        section {
-            padding-right: 0 !important; /* Remove todos os paddings das seções */
-            padding-left: 0 !important; /* Remove todos os paddings das seções */
-        }
-    
-        header, footer {
-            padding-right: 0 !important; /* Remove todos os paddings das seções */
-            padding-left: 0 !important; /* Remove todos os paddings das seções */
-        }
-        .about-text h2 {
-            font-size: 2.6rem; /* Tamanho do título */
-        }
-        
-        /* Linha divisória na seção "Sobre" */
-        .about-text .about-divider {
-            margin-left: 135px;
-        }
-        
-        /* Texto descritivo na seção "Sobre" */
-        .about-text p {
-            font-size: 0.9rem; /* Tamanho do texto */
-        }
-    
 }
